@@ -24,7 +24,7 @@ const Header = () => {
       <Maxwidth tw="flex items-center py-2 px-6 justify-start justify-between lg:(py-8 px-[6.25rem])">
         <Logo />
 
-        <JoinWaitlist tw="px-2 sm:(px-8)" />
+        <JoinWaitlist tw="p-3 sm:(px-8 py-4)" />
       </Maxwidth>
     </header>
   )

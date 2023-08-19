@@ -6,7 +6,7 @@ const Faq = () => {
   return (
     <section tw="bg-[#C4C9E166] bg-[url(/subtle-bg.svg)] bg-cover">
       <Maxwidth tw="flex flex-col gap-16 py-20 px-6 lg:(flex-row-reverse justify-between items-center p-[6.25rem])">
-        <Image src={question} alt="faq" />
+        <Image src={question} alt="faq" tw="max-lg:(mx-auto max-w-[203px])" />
 
         <div tw="flex flex-col gap-6 lg:(gap-[2.62rem] max-w-[40.4rem])">
           <Heading

@@ -75,6 +75,6 @@ const WaitListForm = () => {
   )
 }
 
-const Input = tw.input`bg-white w-full rounded-[1rem] p-[0.88rem] text-black font-semibold lg:(p-[1.5rem] text-xl)`
+const Input = tw.input`bg-white w-full rounded-[1rem] p-[0.88rem] text-black lg:(p-[1.5rem] text-xl)`
 
 export default WaitListForm
