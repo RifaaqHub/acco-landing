@@ -8,6 +8,7 @@ const WaitListForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<waitListInput>({
     defaultValues: {
@@ -21,7 +22,9 @@ const WaitListForm = () => {
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
   const subscribe = (data: waitListInput) => {
-    join(data)
+    join(data, {
+      onSuccess: () => reset(),
+    })
   }
 
   return (

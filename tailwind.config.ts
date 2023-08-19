@@ -9,6 +9,11 @@ export default {
         ribbon: '#0047ff',
         primary: '#1A2A55',
         secondary: '#FFCF3F',
+        customGrey: '#2B2D30',
+      },
+      fontFamily: {
+        calm: ['var(--font-calm)'],
+        roboto: ['var(--font-roboto)'],
       },
     },
   },
