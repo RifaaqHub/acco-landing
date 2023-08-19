@@ -1,10 +1,10 @@
 import { Heading, Maxwidth, Paragraph } from '@/components'
 import Image from 'next/image'
-import question from 'public/question.svg'
+import question from 'public/question.png'
 
 const Faq = () => {
   return (
-    <section tw="bg-[#C4C9E166]">
+    <section tw="bg-[#C4C9E166] bg-[url(/subtle-bg.svg)] bg-cover">
       <Maxwidth tw="flex flex-col gap-16 py-20 px-6 lg:(flex-row-reverse justify-between items-center p-[6.25rem])">
         <Image src={question} alt="faq" />
 

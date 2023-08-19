@@ -5,9 +5,14 @@ import tw from 'twin.macro'
 const Features = () => {
   return (
     <section>
-      <Maxwidth tw="grid gap-2 pt-12 pb-16 px-6 lg:(grid-cols-2 py-16 px-[6.25rem])">
+      <Maxwidth
+        as={'ul'}
+        tw="grid gap-2 pt-12 pb-16 px-6 lg:(grid-cols-2 py-16 px-[6.25rem])"
+      >
         {features.map((feature, index) => (
-          <Feature {...feature} reverse={index === 1 || index === 2} />
+          <li key={index}>
+            <Feature {...feature} reverse={index === 1 || index === 2} />
+          </li>
         ))}
       </Maxwidth>
     </section>
