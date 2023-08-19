@@ -2,13 +2,17 @@
 
 import React from 'react'
 import Hero from './hero'
-import About from './about'
 import WaitListForm from './waitListForm'
+import Attention from './Attention'
+import Features from './Features'
+import Faq from './Faq'
 
 const Home = () => (
   <>
     <Hero />
-    <About />
+    <Attention />
+    <Features />
+    <Faq />
     <WaitListForm />
   </>
 )

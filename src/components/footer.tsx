@@ -5,7 +5,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer tw="bg-primary text-white border-b-2 border-b-secondary">
+    <footer tw="bg-customGrey text-white border-b-2 border-b-secondary">
       <Maxwidth tw="flex flex-col gap-[3.38rem] px-6 py-16 items-center lg:(flex-row justify-between items-center px-[6.25rem])">
         <Logo $lightBg={false} />
 

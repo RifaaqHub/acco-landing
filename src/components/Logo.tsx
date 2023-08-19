@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import lightLogo from 'public/logo-light-bg.png'
 import darkLogo from 'public/logo-dark-bg.png'
 import tw, { styled } from 'twin.macro'
 
@@ -8,7 +7,7 @@ const Logo = ({ $lightBg = true }: { $lightBg?: boolean }) => {
     <div>
       <Image
         tw="max-w-[113px] lg:(max-w-[187px])"
-        src={$lightBg ? lightLogo : darkLogo}
+        src={darkLogo}
         alt="rifaaq-logo"
       />
     </div>
