@@ -17,7 +17,7 @@ const WaitListForm = () => {
     },
   })
 
-  const { mutate: join } = useJoinWaitList()
+  const { mutate: join, isLoading } = useJoinWaitList()
 
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
@@ -57,7 +57,7 @@ const WaitListForm = () => {
             type="text"
             placeholder="Name/Qunya"
             {...register('nickname', { required: true, minLength: 3 })}
-            css={[errors?.email && tw`border border-[red]`]}
+            css={[errors?.nickname && tw`border border-[red]`]}
           />
           <Input
             type="text"
@@ -66,7 +66,10 @@ const WaitListForm = () => {
             css={[errors?.email && tw`border border-[red]`]}
           />
 
-          <Button tw="text-lg whitespace-nowrap px-0 w-full md:(max-w-[17.2rem]) ml-auto">
+          <Button
+            disabled={isLoading}
+            tw="text-lg whitespace-nowrap px-0 w-full md:(max-w-[17.2rem]) ml-auto"
+          >
             Join Now
           </Button>
         </div>

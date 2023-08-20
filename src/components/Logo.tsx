@@ -6,7 +6,7 @@ const Logo = ({ $lightBg = true }: { $lightBg?: boolean }) => {
   return (
     <div>
       <Image
-        tw="max-w-[149px] lg:(max-w-[278px])"
+        tw="max-w-[113px] h-auto md:(max-w-[150px]) lg:(max-w-[187px])"
         src={darkLogo}
         alt="rifaaq-logo"
       />
