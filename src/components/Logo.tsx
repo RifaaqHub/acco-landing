@@ -15,7 +15,7 @@ const Logo = ({ $lightBg = true }: { $lightBg?: boolean }) => {
 }
 
 export const RifaaqIcon = styled.div(() => [
-  tw`bg-[url(/rifaaq-fav.png)] w-[6.5rem] h-[6.5rem] bg-cover bg-no-repeat lg:(w-[12rem] h-[12rem])`,
+  tw`bg-[url(/fav.png)] w-[6.5rem] h-[6.5rem] bg-cover bg-no-repeat lg:(w-[12rem] h-[12rem])`,
 ])
 
 export default Logo
