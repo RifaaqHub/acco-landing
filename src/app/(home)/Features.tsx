@@ -7,7 +7,7 @@ const Features = () => {
     <section>
       <Maxwidth
         as={'ul'}
-        tw="grid gap-2 pt-12 pb-16 px-6 lg:(grid-cols-2 py-16 px-[6.25rem])"
+        tw="grid gap-2 pt-12 pb-16 px-6 lg:(grid-cols-2 items-stretch py-16 px-[6.25rem])"
       >
         {features.map((feature, index) => (
           <li key={index}>
@@ -35,7 +35,7 @@ const Feature = ({
   return (
     <div
       css={[
-        tw`rounded-[2rem] bg-customGrey flex flex-col gap-14 px-8 py-16 lg:(px-16 py-20)`,
+        tw`rounded-[2rem] h-full bg-customGrey flex flex-col gap-14 px-8 py-16 lg:(px-16 py-20)`,
         !available && tw`bg-primary`,
         reverse && tw`flex-col-reverse`,
       ]}
