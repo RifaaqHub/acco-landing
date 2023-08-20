@@ -13,8 +13,8 @@ const Hero = () => {
           </Heading>
 
           <Paragraph tw="pb-16 lg:(text-2xl)">
-            Through innovation and compassion, we aspire to be the ultimate
-            partner in personal and professional growth, driving positive change
+            Through innovation and compassion, we aspire to be your ultimate
+            partner in spiritual and all-round growth, driving positive change
             and creating a brighter future for all.
           </Paragraph>
 

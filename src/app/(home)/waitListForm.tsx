@@ -47,7 +47,7 @@ const WaitListForm = () => {
           <Paragraph tw="pb-6 lg:(pb-8)">
             Are you ready to embark on a transformative journey towards becoming
             the best version of yourself? Join our waitlist and be among the
-            first to experience Rifaaq - the ultimate companion for your
+            first to experience Acco-Rifaaq - the ultimate companion for your
             spiritual growth and all-round development.
           </Paragraph>
         </div>
