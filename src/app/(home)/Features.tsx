@@ -25,18 +25,20 @@ const Feature = ({
   img,
   available,
   reverse,
+  highlight = false,
 }: {
   title: string
   desc: string
   img: string
   available: boolean
   reverse: boolean
+  highlight?: boolean
 }) => {
   return (
     <div
       css={[
         tw`rounded-[2rem] h-full bg-customGrey flex flex-col gap-14 px-8 py-16 lg:(px-16 py-20)`,
-        !available && tw`bg-primary`,
+        highlight && tw`bg-primary`,
         reverse && tw`flex-col-reverse`,
       ]}
     >
@@ -87,7 +89,8 @@ const features = [
     title: 'Accountability partnerships',
     desc: 'Users have the option to form accountability partnerships with fellow app users or friends. This fosters a sense of community and support, as users can motivate and encourage each other to achieve their goals.',
     img: '/circles.png',
-    available: false,
+    available: true,
+    highlight: true,
   },
 ]
 
