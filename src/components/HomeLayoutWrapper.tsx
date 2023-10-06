@@ -7,7 +7,7 @@ const HomeLayoutProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Header />
-      {children}
+      <div tw="min-h-[80vh]">{children}</div>
       <Footer />
     </>
   )
