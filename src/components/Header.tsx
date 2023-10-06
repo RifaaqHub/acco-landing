@@ -1,10 +1,10 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { JoinWaitlist } from './Button'
 import Logo from './Logo'
 import Maxwidth from './Maxwidth'
 import tw from 'twin.macro'
+import { GetStarted } from './Button'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -24,7 +24,7 @@ const Header = () => {
       <Maxwidth tw="flex items-center py-2 px-6 justify-start justify-between lg:(py-4 px-[6.25rem])">
         <Logo />
 
-        <JoinWaitlist tw="p-3 sm:(px-8 py-4)" />
+        <GetStarted tw="p-3 sm:(px-8 py-4)" />
       </Maxwidth>
     </header>
   )

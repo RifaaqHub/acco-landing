@@ -42,13 +42,13 @@ const WaitListForm = () => {
 
         <div tw="max-w-[44rem] mx-auto flex flex-col gap-4">
           <Heading as="label" htmlFor="email">
-            Join Our Waitlist Today!
+            Join Our Newsletter Today!
           </Heading>
           <Paragraph tw="pb-6 lg:(pb-8)">
             Are you ready to embark on a transformative journey towards becoming
-            the best version of yourself? Join our waitlist and be among the
-            first to experience Acco-Rifaaq - the ultimate companion for your
-            spiritual growth and all-round development.
+            the best version of yourself? Join our newsletter and get inspiring
+            updates from Acco-Rifaaq - the ultimate companion for your spiritual
+            growth and all-round development.
           </Paragraph>
         </div>
 
