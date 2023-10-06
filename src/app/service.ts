@@ -2,7 +2,7 @@ import axios from 'axios'
 import { waitListInput } from '../../types/waitlistInput'
 
 export const service = axios.create({
-  baseURL: 'https://rifaaq-backend-c6p3.onrender.com/',
+  baseURL: process.env.NEXT_PUBLIC_SERVICE_BASE_URL!,
 })
 
 export const joinWaitlist = async (data: waitListInput) => {

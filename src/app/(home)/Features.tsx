@@ -86,7 +86,7 @@ const features = [
   {
     title: 'Accountability partnerships',
     desc: 'Users have the option to form accountability partnerships with fellow app users or friends. This fosters a sense of community and support, as users can motivate and encourage each other to achieve their goals.',
-    img: '/upcoming.png',
+    img: '/circles.png',
     available: false,
   },
 ]
