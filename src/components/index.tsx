@@ -1,4 +1,4 @@
-export { default as Button, JoinWaitlist } from './Button'
+export { default as Button, GetStarted } from './Button'
 export { default as Logo, RifaaqIcon } from './Logo'
 export { default as Maxwidth } from './Maxwidth'
 export { Heading } from './Heading'

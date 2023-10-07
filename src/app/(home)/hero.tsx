@@ -1,4 +1,4 @@
-import { Heading, JoinWaitlist, Maxwidth, Paragraph } from '@/components'
+import { Heading, GetStarted, Maxwidth, Paragraph } from '@/components'
 import Image from 'next/image'
 import heroImg from 'public/hero-img.png'
 
@@ -18,7 +18,7 @@ const Hero = () => {
             and creating a brighter future for all.
           </Paragraph>
 
-          <JoinWaitlist tw="text-lg" shadow />
+          <GetStarted tw="text-lg" shadow />
         </div>
 
         <Image src={heroImg} alt="" tw="w-full max-w-[28rem]" />
