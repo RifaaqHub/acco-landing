@@ -3,7 +3,7 @@
 import { redirect } from 'next/navigation'
 
 const Launchday = () => {
-  redirect('https://meet.google.com/ucu-hrkp-bst')
+  redirect('https://web.facebook.com/events/217117788048462/')
 }
 
 export default Launchday
