@@ -44,7 +44,7 @@ const MobileNav = () => {
           menuOpen && tw`border-b-[1px] px-8 py-4 text-primary`,
         ]}
       >
-        <Logo />
+        <Logo asHomeNav />
 
         <button title="mobile-menu-button" onClick={toggleMenu}>
           {menuOpen ? <IoMdCloseCircle size={30} /> : <FiMenu size={30} />}

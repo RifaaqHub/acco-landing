@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer tw="bg-customGrey text-white border-b-2 border-b-secondary">
       <Maxwidth tw="flex flex-col gap-[3.38rem] px-6 py-16 items-center lg:(flex-row justify-between items-center px-[6.25rem])">
-        <Logo $lightBg={false} />
+        <Logo asHomeNav $lightBg={false} />
 
         <div tw="p-4 flex flex-row gap-8">
           {socials.map(social => {

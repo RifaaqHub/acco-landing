@@ -1,10 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Logo from './Logo'
 import Maxwidth from './Maxwidth'
 import tw from 'twin.macro'
-import { GetStarted } from './Button'
 import MobileNav from './mobileNav'
 import DesktopNav from './desktopNav'
 

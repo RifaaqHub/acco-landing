@@ -11,7 +11,7 @@ const DesktopNav = () => {
 
   return (
     <nav tw="hidden lg:flex relative items-center flex-1 justify-between text-white">
-      <Logo />
+      <Logo asHomeNav />
 
       <ul tw="flex flex-row items-center gap-[2rem] xl:gap-[3rem]">
         {headerLinks.map(link => {
