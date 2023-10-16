@@ -20,7 +20,12 @@ const Footer = () => {
           })}
         </div>
 
-        <Paragraph>&copy; Copyright 2023</Paragraph>
+        <div tw="flex flex-col gap-4 items-center">
+          <Link href={routes.privacy.path}>
+            <Paragraph>Privacy Policy</Paragraph>
+          </Link>
+          <Paragraph>&copy; Copyright 2023</Paragraph>
+        </div>
       </Maxwidth>
     </footer>
   )

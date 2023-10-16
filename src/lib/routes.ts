@@ -14,6 +14,9 @@ export const routes = {
   demo: {
     path: 'https://youtube.com/shorts/vWmt7DAdQYo?feature=share',
   },
+  privacy: {
+    path: '/privacy',
+  },
 }
 
 export const headerLinks = [
