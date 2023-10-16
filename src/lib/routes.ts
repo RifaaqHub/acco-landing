@@ -8,4 +8,21 @@ export const routes = {
   linkedIn: {
     path: 'https://www.linkedin.com/company/rifaaq',
   },
+  faq: {
+    path: '/#faq',
+  },
+  demo: {
+    path: 'https://youtube.com/shorts/vWmt7DAdQYo?feature=share',
+  },
 }
+
+export const headerLinks = [
+  {
+    title: 'FAQs',
+    href: routes.faq.path,
+  },
+  {
+    title: 'Watch Demo',
+    href: routes.demo.path,
+  },
+]
