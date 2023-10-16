@@ -1,15 +1,32 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import darkLogo from 'public/logo-dark-bg.png'
 import tw, { styled } from 'twin.macro'
 
-const Logo = ({ $lightBg = true }: { $lightBg?: boolean }) => {
+const Logo = ({
+  $lightBg = true,
+  asHomeNav,
+}: {
+  $lightBg?: boolean
+  asHomeNav?: boolean
+}) => {
+  const RenderComp = () => (
+    <Image
+      tw="max-w-[113px] h-auto md:(max-w-[150px])"
+      src={darkLogo}
+      alt="rifaaq-logo"
+    />
+  )
+
   return (
     <div>
-      <Image
-        tw="max-w-[113px] h-auto md:(max-w-[150px])"
-        src={darkLogo}
-        alt="rifaaq-logo"
-      />
+      {asHomeNav ? (
+        <Link href={'/'}>
+          <RenderComp />
+        </Link>
+      ) : (
+        <RenderComp />
+      )}
     </div>
   )
 }

@@ -4,7 +4,7 @@ import question from 'public/question.png'
 
 const Faq = () => {
   return (
-    <section tw="bg-[#C4C9E166] bg-[url(/subtle-bg.svg)] bg-cover">
+    <section id="faq" tw="bg-[#C4C9E166] bg-[url(/subtle-bg.svg)] bg-cover">
       <Maxwidth tw="flex flex-col gap-16 py-20 px-6 lg:(flex-row-reverse justify-between items-center p-[6.25rem])">
         <Image src={question} alt="faq" tw="max-lg:(mx-auto max-w-[203px])" />
 
