@@ -7,9 +7,9 @@ const PrivacyPolicy = () => {
     <Maxwidth tw="py-10 px-6 flex flex-col gap-4 lg:(p-[6.25rem] gap-6)">
       <Heading $variant="h4">Privacy Policy</Heading>
       <Paragraph>
-        This Privacy Policy explains how [Your Company Name] ("we," "our," or
-        "us") collects, uses, discloses, and protects your personal information
-        when you use our mobile application (the "App").
+        This Privacy Policy explains how Rifaaq ("we," "our," or "us") collects,
+        uses, discloses, and protects your personal information when you use our
+        mobile application (the "App").
       </Paragraph>
 
       <ol tw="list-decimal flex flex-col gap-3 lg:(gap-4)">
