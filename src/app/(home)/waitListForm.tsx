@@ -1,31 +1,38 @@
-import { Button, Heading, RifaaqIcon, Maxwidth, Paragraph } from '@/components'
+import {
+  Button,
+  Heading,
+  RifaaqIcon,
+  Maxwidth,
+  Paragraph,
+  GetStarted,
+} from '@/components'
 import { useForm } from 'react-hook-form'
 import tw from 'twin.macro'
 import { waitListInput } from '../../../types/waitlistInput'
 import useJoinWaitList from './useJoinWaitList'
 
 const WaitListForm = () => {
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm<waitListInput>({
-    defaultValues: {
-      email: '',
-      nickname: '',
-    },
-  })
+  // const {
+  //   register,
+  //   handleSubmit,
+  //   reset,
+  //   formState: { errors },
+  // } = useForm<waitListInput>({
+  //   defaultValues: {
+  //     email: '',
+  //     nickname: '',
+  //   },
+  // })
 
-  const { mutate: join, isLoading } = useJoinWaitList()
+  // const { mutate: join, isLoading } = useJoinWaitList()
 
-  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+  // const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 
-  const subscribe = (data: waitListInput) => {
-    join(data, {
-      onSuccess: () => reset(),
-    })
-  }
+  // const subscribe = (data: waitListInput) => {
+  //   join(data, {
+  //     onSuccess: () => reset(),
+  //   })
+  // }
 
   return (
     <Maxwidth
@@ -33,8 +40,8 @@ const WaitListForm = () => {
       id="join-waitlist"
       tw="py-14 px-6 md:(px-10 py-[4.25rem]) 2xl:(py-[5.16rem] px-[6.25rem])"
     >
-      <form
-        onSubmit={handleSubmit(subscribe)}
+      <div
+        // onSubmit={handleSubmit(subscribe)}
         tw="w-full relative overflow-hidden px-4 py-[6.25rem] flex flex-col gap-6 rounded-[0.75rem] text-white text-center bg-primary bg-cover bg-no-repeat  lg:(gap-4 py-[4.5rem])"
       >
         <RifaaqIcon tw="absolute -top-[3rem] -right-[3rem] 2xl:(-top-[6rem] -right-[6rem])" />
@@ -42,17 +49,19 @@ const WaitListForm = () => {
 
         <div tw="max-w-[44rem] mx-auto flex flex-col gap-4">
           <Heading as="label" htmlFor="email">
-            Join Our Waitlist Today!
+            Start a unique journey on Acco today!
           </Heading>
           <Paragraph tw="pb-6 lg:(pb-8)">
             Are you ready to embark on a transformative journey towards becoming
-            the best version of yourself? Join our waitlist and be among the
-            first to experience Acco-Rifaaq - the ultimate companion for your
-            spiritual growth and all-round development.
+            the best version of yourself? Click the button below on your mobile
+            to install Acco-Rifaaq - the ultimate companion for your spiritual
+            growth and all-round development.
           </Paragraph>
         </div>
 
-        <div tw="flex flex-col items-center justify-stretch gap-4 w-full max-w-[35rem] mx-auto">
+        <GetStarted tw="w-full max-w-[250px] mx-auto" />
+
+        {/* <div tw="flex flex-col items-center justify-stretch gap-4 w-full max-w-[35rem] mx-auto">
           <Input
             type="text"
             placeholder="Name/Qunya"
@@ -72,8 +81,8 @@ const WaitListForm = () => {
           >
             Join Now
           </Button>
-        </div>
-      </form>
+        </div> */}
+      </div>
     </Maxwidth>
   )
 }
