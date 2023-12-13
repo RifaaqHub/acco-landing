@@ -10,6 +10,7 @@ export default {
         primary: '#1A2A55',
         secondary: '#FFCF3F',
         customGrey: '#2B2D30',
+        lightGold: '#FAC31C4D',
       },
       fontFamily: {
         calm: ['var(--font-calm)'],
