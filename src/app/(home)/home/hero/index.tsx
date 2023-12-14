@@ -34,8 +34,16 @@ const Hero = () => {
             tw="hidden lg:(block top-12 left-12 absolute)"
             alt=""
           />
-          <Image src={two} tw="lg:(block bottom-12  left-12 absolute)" alt="" />
-          <Image src={four} tw="right-12 bottom-12 absolute" alt="" />
+          <Image
+            src={two}
+            tw="max-lg:max-w-[100px] lg:(block bottom-12  left-12 absolute)"
+            alt=""
+          />
+          <Image
+            src={four}
+            tw="max-lg:(max-w-[100px] right-4) right-12 bottom-12 absolute"
+            alt=""
+          />
           <Image
             src={three}
             tw="hidden lg:(block right-12 top-12 absolute)"
