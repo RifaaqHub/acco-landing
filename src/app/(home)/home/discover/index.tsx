@@ -63,12 +63,12 @@ const Metric = ({
 const metrics = [
   {
     title: 'Active Users',
-    desc: `800+`,
+    desc: `500+`,
     img: users,
   },
   {
     title: 'Task Created',
-    desc: `2000`,
+    desc: `1200+`,
     img: tasks,
   },
   {
@@ -78,7 +78,7 @@ const metrics = [
   },
   {
     title: 'Average Rating',
-    desc: `2000`,
+    desc: `4.8`,
     img: partnership,
   },
 ]

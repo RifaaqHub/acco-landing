@@ -114,22 +114,22 @@ const Reason = ({
 const features = [
   {
     title: 'Accountability Elevated',
-    desc: 'Mark your daily tasks, witness your completion percentage rise. Instill a sense of accountability, in preparation for the ultimate account on the Day of Judgment.',
+    desc: 'Mark tasks, watch your completion soar. Cultivate accountability for the ultimate audit on the Day of Judgment.',
     img: accountability,
   },
   {
     title: 'Reminders that Fetch Rewards',
-    desc: 'Receive push notifications as gentle reminders. Your mobile becomes a valuable companion, aiding you in earning spiritual rewards in your everyday actions.',
+    desc: 'Receive push notifications, turning your mobile into a spiritual companion that helps you accumulate rewards in your daily deeds.',
     img: reminders,
   },
   {
     title: 'Partnerships that Matter',
-    desc: 'Forge connections with like-minded individuals. Elevate your existing relationships with purposeful engagement. Surround yourself with those striving for improvement — a principle deeply valued in Islam.',
+    desc: 'Connect with those striving for improvement & purposeful engagement, reflecting Islamic values of communal growth.',
     img: partnership,
   },
   {
     title: 'Guided Growth for Every Level',
-    desc: `Whether you're seasoned in balance or a newcomer seeking improvement, Acco-Rifaaq offers targeted categories for deliberate growth. Choose what matters to you, see impactful suggestions, and embark on your journey.`,
+    desc: `Whether seasoned or new to improvement, Acco offers targeted categories for deliberate growth. Select what matters, get impactful suggestions, and embark on your journey.`,
     img: guided,
   },
 ]
@@ -137,7 +137,7 @@ const features = [
 const reasons = [
   {
     title: 'Purposeful Living',
-    desc: `Your tasks are not just routines; they're steps towards spiritual accountability and growth.`,
+    desc: `Your tasks are not just routines; they're steps towards spiritual accountability and success.`,
     img: tasks,
   },
   {

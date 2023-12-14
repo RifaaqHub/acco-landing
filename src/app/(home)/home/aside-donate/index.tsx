@@ -3,8 +3,10 @@
 import { Button, Heading, Maxwidth, Paragraph } from '@/components'
 import voyager from './desert.png'
 import Image from 'next/image'
+import { useToggle } from 'usehooks-ts'
 
 const QuoteAndDonate = () => {
+  const [showDetails, toggleDetails] = useToggle(false)
   return (
     <Maxwidth tw="px-6 py-12 flex flex-col gap-12 text-white lg:(gap-[6.25rem] p-[6.25rem])">
       <div tw="rounded-[1rem] bg-customGrey overflow-hidden text-center max-lg:(max-w-[34rem] mx-auto) flex flex-col lg:(grid grid-cols-2)">
@@ -39,7 +41,16 @@ const QuoteAndDonate = () => {
             innovation meets execution. Be a part of the transformation.
           </Paragraph>
 
-          <Button tw="w-fit">Donate Now</Button>
+          <Button tw="w-fit" onClick={toggleDetails}>
+            Donate Now
+          </Button>
+          {showDetails ? (
+            <div>
+              <p>6381746965</p>
+              <p>Rifaaq</p>
+              <p>Moniepoint MFB</p>
+            </div>
+          ) : null}
         </div>
       </div>
     </Maxwidth>

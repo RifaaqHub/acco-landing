@@ -1,25 +1,22 @@
-import { Heading, Maxwidth, Paragraph } from '@/components'
-import Image from 'next/image'
-import attention from 'public/distinction.png'
+import { GetStarted, Heading, Maxwidth, Paragraph } from '@/components'
 
 const Attention = () => {
   return (
-    <section tw="bg-[#C4C9E166] bg-[url(/subtle-bg.svg)] bg-cover">
-      <Maxwidth tw="flex flex-col gap-[4.31rem] py-16 px-6 lg:(flex-row-reverse items-center justify-between py-16 px-[6.25rem] gap-20)">
-        <div tw="lg:(max-w-[50%])">
-          <Heading
-            as={'blockquote'}
-            $variant="h3"
-            tw="font-semibold pb-[2.62rem] text-right"
-          >{`حاسبوا أنفسكم قبل أن تحاسبوا، وزنوها قبل أن توزنوا`}</Heading>
-          <Paragraph tw="lg:(text-2xl) font-semibold">
-            Hold yourselves accountable before you are held accountable and
-            evaluate yourselves before you are evaluated.
-            <br /> <br /> <span tw="italic">{`-`}Umar R.A</span>
+    <section tw="bg-lightGold px-6 py-12 lg:(px-[6.25rem] py-[3.75rem])">
+      <Maxwidth tw="p-6 flex flex-col items-center bg-primary text-white rounded-[1rem] shadow-2xl lg:(py-16 flex-row px-[6.25rem])">
+        <div tw="flex-1">
+          <Heading as={'h4'} $variant="h4" tw="pb-4">
+            Start Your Journey Today!
+          </Heading>
+
+          <Paragraph>
+            Embrace conscious living, build accountability, and continuously
+            grow with Acco-Rifaaq. Your ultimate Islamic productivity companion
+            awaits.
           </Paragraph>
         </div>
 
-        <Image src={attention} tw="mx-auto" alt="" />
+        <GetStarted tw="px-16" />
       </Maxwidth>
     </section>
   )

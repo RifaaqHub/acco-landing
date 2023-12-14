@@ -20,6 +20,7 @@ const Home = () => {
       <FeatureListJoin />
       <Testimonials />
       <QuoteAndDonate />
+      <Attention />
       <Faq />
       <WaitListForm />
     </>
