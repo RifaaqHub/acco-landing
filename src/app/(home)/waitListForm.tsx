@@ -42,7 +42,7 @@ const WaitListForm = () => {
     >
       <div
         // onSubmit={handleSubmit(subscribe)}
-        tw="w-full relative overflow-hidden px-4 py-[6.25rem] flex flex-col gap-6 rounded-[0.75rem] text-white text-center bg-primary bg-cover bg-no-repeat  lg:(gap-4 py-[4.5rem])"
+        tw="w-full relative overflow-hidden px-4 py-[6.25rem] flex flex-col gap-6 rounded-[0.75rem] text-white text-center bg-customGrey bg-cover bg-no-repeat  lg:(gap-4 py-[4.5rem])"
       >
         <RifaaqIcon tw="absolute -top-[3rem] -right-[3rem] 2xl:(-top-[6rem] -right-[6rem])" />
         <RifaaqIcon tw="absolute -bottom-[3rem] -left-[3rem] 2xl:(-bottom-[6rem] -left-[6rem])" />

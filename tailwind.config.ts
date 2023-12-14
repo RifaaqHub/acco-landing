@@ -11,6 +11,7 @@ export default {
         secondary: '#FFCF3F',
         customGrey: '#2B2D30',
         lightGold: '#FAC31C4D',
+        lightBlue: '#C4C9E166',
       },
       fontFamily: {
         calm: ['var(--font-calm)'],

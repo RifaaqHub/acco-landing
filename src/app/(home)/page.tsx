@@ -8,6 +8,8 @@ import Features from './home/features'
 import Faq from './home/Faq'
 import DiscoverAcco from './home/discover'
 import FeatureListJoin from './home/join-community/feature-list-join'
+import Testimonials from './home/testimonials'
+import QuoteAndDonate from './home/aside-donate'
 
 const Home = () => {
   return (
@@ -16,7 +18,8 @@ const Home = () => {
       <Features />
       <DiscoverAcco />
       <FeatureListJoin />
-      <Attention />
+      <Testimonials />
+      <QuoteAndDonate />
       <Faq />
       <WaitListForm />
     </>
