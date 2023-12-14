@@ -8,6 +8,9 @@ export const routes = {
   linkedIn: {
     path: 'https://www.linkedin.com/company/rifaaq',
   },
+  whatsapp: {
+    path: 'https://chat.whatsapp.com/FEGuwuuMJICLVqKVMEkGsT',
+  },
   faq: {
     path: '/#faq',
   },

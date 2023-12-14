@@ -15,11 +15,11 @@ const Features = () => {
     <section>
       <Maxwidth tw="py-12 flex flex-col gap-12 lg:(pt-[6.25rem] gap-[6.25rem])">
         <div>
-          <Heading $variant="h2" as="h2" tw="text-center pb-4 lg:(pb-6)">
+          <Heading $variant="h2" as="h2" tw="text-center pb-4 px-6 lg:(pb-6)">
             Features That Resonate
           </Heading>
 
-          <ul tw="grid gap-2 pt-12 pb-16 px-6 lg:(grid-cols-2 items-stretch py-16 px-[6.25rem])">
+          <ul tw="grid gap-4 px-6 justify-center lg:(grid-cols-2 gap-6 items-stretch px-[6.25rem])">
             {features.map((feature, index) => (
               <li key={index}>
                 <Feature {...feature} />
@@ -28,13 +28,13 @@ const Features = () => {
           </ul>
         </div>
 
-        <div tw="bg-customGrey rounded-[1rem] py-12 px-4 lg:(p-12)">
-          <Heading $variant="h2" as="h2" tw="text-secondary pb-6">
+        <div tw="bg-customGrey rounded-[1rem] mx-6 py-12 px-4 lg:(p-12 mx-[6.25rem])">
+          <Heading $variant="h2" as="h2" tw="text-secondary text-center pb-6">
             Why Choose Acco-Rifaaq?
           </Heading>
 
-          <div tw="flex flex-col gap-6 lg:(gap-16 flex-row-reverse)">
-            <ul tw="grid gap-2 pt-12 pb-16 px-6 lg:(gap-5 max-w-[34.4rem] flex-1)">
+          <div tw="flex flex-col gap-6 justify-center items-center lg:(gap-16 flex-row-reverse)">
+            <ul tw="grid gap-6 pt-12 pb-16 lg:(max-w-[33.4rem] flex-1)">
               {reasons.map((reason, index) => (
                 <li key={index}>
                   <Reason {...reason} />
@@ -42,7 +42,7 @@ const Features = () => {
               ))}
             </ul>
 
-            <Image src={screen} alt="acco-partnership" tw="max-w-[14.1rem]" />
+            <Image src={screen} alt="acco-partnership" tw="max-w-[16rem]" />
           </div>
         </div>
       </Maxwidth>
@@ -62,14 +62,11 @@ const Feature = ({
   return (
     <div
       css={[
-        tw`rounded-[2rem] h-full bg-customGrey text-white flex flex-col gap-6 px-8 py-6 lg:(gap-8)`,
+        tw`rounded-[2rem] h-full bg-customGrey text-white flex flex-col gap-6 px-8 py-6 lg:(gap-8 w-full)`,
       ]}
     >
       <Image src={img} tw="w-12 lg:(w-[4.25rem])" alt={title} />
-      <Heading
-        as={'h4'}
-        tw="text-secondary text-[1.75rem] leading-[2.275rem] md:(text-4xl) lg:(text-[2.5rem] leading-[3.25rem])"
-      >
+      <Heading as={'h4'} $variant={'h4'}>
         {title}
       </Heading>
 
@@ -92,16 +89,17 @@ const Reason = ({
   return (
     <div
       css={[
-        tw`rounded-[2rem] h-full bg-lightGold text-white border-2 border-lightGold flex flex-col gap-6 px-4 lg:(px-6 flex-row gap-4)`,
+        tw`rounded-[2rem] h-full bg-lightGold text-white border-2 border-lightGold flex flex-col gap-6 p-4 lg:(px-6 flex-row items-center gap-4 max-w-[34.375rem])`,
       ]}
     >
-      <Image src={img} tw="w-12 lg:(w-[4.25rem])" alt={title} />
+      <Image
+        src={img}
+        tw="w-12 lg:(min-w-[5.375rem] h-[5.375rem])"
+        alt={title}
+      />
 
       <div>
-        <Heading
-          as={'h4'}
-          tw="text-secondary text-[1.75rem] leading-[2.275rem] md:(text-4xl) lg:(text-[2.5rem] leading-[3.25rem])"
-        >
+        <Heading as={'h4'} $variant={'h4'}>
           {title}
         </Heading>
 

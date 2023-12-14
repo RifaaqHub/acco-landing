@@ -20,7 +20,7 @@ const Hero = () => {
             our app is your guide to a balanced and purposeful life.
           </Paragraph>
 
-          <GetStarted tw="text-lg" shadow />
+          <GetStarted tw="text-lg px-16" shadow />
         </div>
       </Maxwidth>
     </section>
