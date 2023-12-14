@@ -30,9 +30,9 @@ const Faq = () => {
             {faqs.map((faq, idx) => (
               <Disclosure as={'div'} key={idx}>
                 {({ open }) => (
-                  <div tw="bg-lightGold rounded-[1rem] pt-4 px-6 lg:(p-6)">
+                  <div tw="bg-lightGold rounded-[1rem] py-4 px-6 lg:(p-6)">
                     <Disclosure.Button
-                      tw="font-calm text-lg w-full flex items-center justify-between lg:(text-2xl)"
+                      tw="font-calm text-lg w-full flex items-center text-left justify-between lg:(text-2xl)"
                       css={[open && tw`border-b border-lightGold pb-4 mb-4`]}
                     >
                       <span>Q: {faq.question}</span>

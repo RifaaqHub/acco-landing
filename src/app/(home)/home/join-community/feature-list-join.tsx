@@ -48,15 +48,15 @@ const FeatureListJoin = () => {
         <GetStarted tw="px-16" />
 
         <div tw="flex items-center justify-center gap-6">
-          <Link href={routes.twitter.path}>
+          <a href={routes.twitter.path}>
             <FaXTwitter size={25} />
-          </Link>
-          <Link href={routes.facebook.path}>
+          </a>
+          <a href={routes.facebook.path}>
             <FaFacebook size={25} />
-          </Link>
-          <Link href={routes.whatsapp.path}>
+          </a>
+          <a href={routes.whatsapp.path}>
             <FaWhatsapp size={25} />
-          </Link>
+          </a>
         </div>
       </div>
     </Maxwidth>
