@@ -23,7 +23,7 @@ const Faq = () => {
           <Image
             src={question}
             alt="faq"
-            tw="mx-auto max-w-[203px] lg:(max-w-[18.45rem])"
+            tw="hidden mx-auto max-w-[203px] lg:(block max-w-[18.45rem])"
           />
 
           <div tw="flex flex-col flex-1 text-white gap-6 ">
@@ -60,15 +60,15 @@ const Faq = () => {
 const faqs = [
   {
     question: 'How do I get started?',
-    answer: `It's simple! Click on the "Get Started" button on this page to go to the app, install the app, create at least 3 tasks, and click on "Start Your Tasks"`,
+    answer: `It's simple! Click 👆 on the "Get Started" button on this page to go to the app, install the app, create at least 3 tasks 3️⃣, and click on "Start Your Tasks 👍⚡"`,
   },
   {
     question: 'How do I track my progress?',
-    answer: `Answer: It's simple! Navigate to the "Analytics" page, and you can easily see your percentage of completion. Toggle the calendar to see your performance for each day of the week, or click the arrow beside the week to see your performance for previous weeks`,
+    answer: `Answer: 😎 It's simple! Navigate to the "Analytics" page 📊, and you can easily see your percentage of completion. Toggle the calendar 📅 to see your performance for each day of the week, or click the arrow beside the week to see your performance for previous weeks ⬅️➡️`,
   },
   {
     question: 'Must I have a Circle accountability partner?',
-    answer: `Short answer, you don't have to. But we encourage you find someone from your family or friends who will assist you on your journey to self improvement and spiritual growth`,
+    answer: `Short answer, you don't have to. But we encourage you find someone from your family or friends who will assist you on your journey to self improvement and spiritual growth 🚀`,
   },
 ]
 

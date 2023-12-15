@@ -32,7 +32,7 @@ const QuoteAndDonate = () => {
         <Image src={voyager} alt="" tw="object-cover w-full h-full" />
 
         <div tw="py-6 px-4 flex flex-col gap-4 lg:(p-6 justify-center)">
-          <Heading as={'p'} $variant="h2">
+          <Heading as={'p'} $variant="h3">
             Invest in Progress: Sodaqah To Impact with Acco-Rifaaq
           </Heading>
 

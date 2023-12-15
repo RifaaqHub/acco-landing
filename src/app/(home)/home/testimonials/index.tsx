@@ -21,7 +21,7 @@ const Testimonials = () => {
             return (
               <div
                 key={idx}
-                tw="p-6 rounded-[1rem] bg-customGrey text-white w-full lg:(max-w-[25rem])"
+                tw="p-6 rounded-[1rem] bg-customGrey text-white w-full h-full lg:(max-w-[25rem])"
               >
                 <div tw="flex gap-4 items-center pb-6">
                   <Image src={user} tw="w-8 h-8" alt="" />
@@ -46,34 +46,32 @@ const Testimonials = () => {
 
 const testimonials = [
   {
-    name: 'Rasheed',
-    comment:
-      '"Acco-Rifaaq transformed my daily routine, merging productivity and spirituality seamlessly."',
+    name: 'Saheed',
+    comment: `"For me, it's the ability to reactivate 'almost forgotten' acts of ibadaat like solatul tesbih, family usrah, family Du'a, Monday and Thursday fasts etc. To be honest, this app has been my best accountability companion since it was launched"`,
   },
   {
-    name: 'Rasheed',
+    name: 'Maya',
     comment:
-      '"Acco-Rifaaq transformed my daily routine, merging productivity and spirituality seamlessly."',
+      '"One of the things I love most about the app is the timely notifications to ginger you and remind you about your tasks. Thanks to the teams for the amazing job."',
   },
   {
-    name: 'Rasheed',
+    name: 'Fatimah',
     comment:
-      '"Acco-Rifaaq transformed my daily routine, merging productivity and spirituality seamlessly."',
+      '"Jazakumullohu khoiroo on your hardwork for the Muslim community as a whole"',
   },
   {
-    name: 'Rasheed',
+    name: 'Aminah',
     comment:
-      '"Acco-Rifaaq transformed my daily routine, merging productivity and spirituality seamlessly."',
+      '"The app has been a veritable accountability partner, not only with my deen, but in other aspect of my life."',
   },
   {
-    name: 'Rasheed',
-    comment:
-      '"Acco-Rifaaq transformed my daily routine, merging productivity and spirituality seamlessly."',
+    name: 'Anas',
+    comment: `"I like the way it help with my task.  The analysis it does, so i would know what I've accomplished in a week and where I'm lacking"`,
   },
   {
-    name: 'Rasheed',
+    name: 'Usman',
     comment:
-      '"Acco-Rifaaq transformed my daily routine, merging productivity and spirituality seamlessly."',
+      '"What has been the best for me is the consistency it pushes, making everyday counts to better myself. 🤍"',
   },
 ]
 

@@ -20,7 +20,12 @@ const Header = () => {
     }
   }, [])
   return (
-    <header css={[tw`bg-customGrey`, isScrolled && tw`sticky top-0 z-[100]`]}>
+    <header
+      css={[
+        tw`bg-customGrey relative  z-[1000]`,
+        isScrolled && tw`sticky top-0`,
+      ]}
+    >
       <Maxwidth tw="flex items-center py-2 px-6 justify-start justify-between lg:(py-4 px-[6.25rem])">
         <MobileNav />
 
