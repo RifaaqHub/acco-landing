@@ -109,7 +109,7 @@ const PricingInfo = () => {
           return (
             <div
               key={name}
-              tw="flex-1 border border-customGrey rounded-b-[.5rem] min-w-[280px] overflow-hidden"
+              tw="flex-1 border border-customGrey rounded-b-[.5rem] min-w-[280px] max-w-[25rem] overflow-hidden"
               css={[isSelected && tw`bg-primary text-white`]}
               onClick={() => setSelectedPlan(plan)}
             >
