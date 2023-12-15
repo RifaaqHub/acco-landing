@@ -73,9 +73,10 @@ const PricingInfo = () => {
         <Paragraph tw="font-calm">Annually</Paragraph>
       </div>
 
-      <div tw="flex justify-between bg-secondary px-4 text-primary py-2  lg:(hidden)">
+      <div tw="flex justify-between bg-secondary px-4 text-primary py-2 sticky top-[102px] z-[1]  lg:(hidden)">
         {data?.map(plan => (
-          <button
+          <a
+            href={`#${plan.name}`}
             onClick={() => setSelectedPlan(plan)}
             tw="px-[0.66rem] pt-1 pb-[0.44rem]"
             css={[
@@ -84,11 +85,11 @@ const PricingInfo = () => {
             ]}
           >
             {plan.name === 'Freemium' ? 'Free' : plan.name}
-          </button>
+          </a>
         ))}
       </div>
 
-      <div tw="flex items-start justify-center flex-wrap gap-6">
+      <div tw="flex items-start justify-center flex-wrap gap-6 snap-y">
         {data.map(plan => {
           let pattern = freeBg,
             name = plan.name,
@@ -109,7 +110,8 @@ const PricingInfo = () => {
           return (
             <div
               key={name}
-              tw="flex-1 border border-customGrey rounded-b-[.5rem] min-w-[280px] max-w-[25rem] overflow-hidden"
+              id={name}
+              tw="flex-1 border border-customGrey rounded-b-[.5rem] min-w-[280px] max-w-[25rem] hover:(bg-primary text-white)"
               css={[isSelected && tw`bg-primary text-white`]}
               onClick={() => setSelectedPlan(plan)}
             >
@@ -129,7 +131,8 @@ const PricingInfo = () => {
                           css={[
                             tw`bg-[#2B2D3099] py-2 px-8 rounded-full text-white`,
                             name === 'Basic' && tw`bg-secondary text-primary`,
-                            name === 'Premium' && tw`bg-primary text-white`,
+                            name === 'Premium' &&
+                              tw`bg-primary text-white border border-secondary`,
                           ]}
                         >
                           {name}
