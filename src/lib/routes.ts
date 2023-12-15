@@ -1,4 +1,7 @@
 export const routes = {
+  liveApp: {
+    path: 'https://acco-app.rifaaq.com',
+  },
   facebook: {
     path: 'https://facebook.com/acco.rifaaq',
   },
@@ -20,9 +23,16 @@ export const routes = {
   privacy: {
     path: '/privacy',
   },
+  pricing: {
+    path: '/pricing',
+  },
 }
 
 export const headerLinks = [
+  {
+    title: 'Pricing',
+    href: routes.pricing.path,
+  },
   {
     title: 'FAQs',
     href: routes.faq.path,
