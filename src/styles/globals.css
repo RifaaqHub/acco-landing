@@ -3,6 +3,10 @@ html {
   color: #4a4d56;
 }
 
+* {
+  scroll-padding-top: 8rem;
+}
+
 *::-webkit-scrollbar {
   width: 5px;
   height: 5px;

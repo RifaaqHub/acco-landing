@@ -41,7 +41,7 @@ const MobileNav = () => {
       <div
         css={[
           tw`flex justify-between text-white`,
-          menuOpen && tw`border-b-[1px] px-8 py-4 text-primary`,
+          menuOpen && tw`border-b-[1px] px-8 py-4 text-customGrey`,
         ]}
       >
         <Logo asHomeNav />
@@ -54,7 +54,8 @@ const MobileNav = () => {
       <nav
         css={[
           tw`flex-col font-normal transition lg:hidden`,
-          menuOpen && tw`flex bg-primary w-full h-full text-[white] gap-8 p-10`,
+          menuOpen &&
+            tw`flex bg-customGrey w-full h-full text-[white] gap-8 p-10`,
           !menuOpen && tw`text-[white] gap-0 h-0 p-0 overflow-hidden`,
         ]}
       >
@@ -75,7 +76,7 @@ const MobileNav = () => {
                 tw`hover:(underline)`,
                 menuOpen && tw`py-2 px-4`,
                 link.href === pathName &&
-                  tw`text-primary underline underline-offset-[1rem]`,
+                  tw`text-white underline underline-offset-[1rem]`,
               ]}
             >
               {link.title}
