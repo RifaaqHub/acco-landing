@@ -35,6 +35,7 @@ export const GetStarted = ({
   <Button
     as={'a'}
     href="https://acco-app.rifaaq.com/"
+    target="_blank"
     $shadow={shadow}
     {...props}
   >

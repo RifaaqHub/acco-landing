@@ -26,13 +26,20 @@ export const routes = {
   pricing: {
     path: '/pricing',
   },
+  about: {
+    path: '/about',
+  },
 }
 
 export const headerLinks = [
   {
-    title: 'Pricing',
-    href: routes.pricing.path,
+    title: 'About Us',
+    href: routes.about.path,
   },
+  // {
+  //   title: 'Pricing',
+  //   href: routes.pricing.path,
+  // },
   {
     title: 'FAQs',
     href: routes.faq.path,
