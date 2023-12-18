@@ -15,7 +15,7 @@ const Testimonials = () => {
           Hear from amazing muslims like you:
         </Heading>
 
-        <div tw="flex flex-wrap gap-5 items-center justify-center max-h-[400px] overflow-y-scroll md:(grid grid-cols-2) lg:(grid-cols-3)">
+        <div tw="flex flex-wrap gap-5 items-center justify-center max-h-[400px] overflow-y-scroll relative md:(grid grid-cols-2) lg:(grid-cols-3)">
           {testimonialsList.map((testimonial, idx) => {
             const { name, comment } = testimonial
             return (
