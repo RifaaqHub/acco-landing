@@ -9,7 +9,7 @@ interface ButtonProps {
 
 const Button = styled.button<ButtonProps>(({ $variant, $isSmall, $shadow }) => [
   // The common button styles added with the tw import
-  tw`px-7 py-4 rounded-[1rem] bg-secondary text-primary font-bold text-sm transform duration-75 hocus:(scale-105) lg:(text-base px-8)`,
+  tw`px-7 py-4 rounded-[1rem] bg-secondary text-primary text-center font-bold text-sm transform duration-75 hocus:(scale-105) lg:(text-base px-8)`,
 
   // Use props to conditionally style your components
   $variant === 'primary' && tw`bg-primary text-white`,
@@ -35,6 +35,7 @@ export const GetStarted = ({
   <Button
     as={'a'}
     href="https://acco-app.rifaaq.com/"
+    target="_blank"
     $shadow={shadow}
     {...props}
   >

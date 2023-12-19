@@ -22,7 +22,7 @@ const DesktopNav = () => {
               css={[
                 tw`hocus:(underline) font-normal`,
                 path === link.href &&
-                  tw`text-primary font-semibold underline decoration-2 underline-offset-[1.5rem]`,
+                  tw`text-white font-semibold underline decoration-2 underline-offset-[1.5rem]`,
               ]}
             >
               <a href={href}>{link.title}</a>
