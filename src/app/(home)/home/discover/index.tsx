@@ -18,7 +18,7 @@ const DiscoverAcco = () => {
           <Paragraph>Checked by 1000+ muslims and counting</Paragraph>
         </div>
 
-        <ul tw="grid gap-4 justify-center max-w-[52.4rem] mx-auto lg:(grid-cols-2 gap-6 items-stretch)">
+        <ul tw="grid gap-4 justify-center max-w-[52.4rem] mx-auto md:(grid-cols-2 gap-6 items-stretch)">
           {metrics.map((feature, index) => (
             <li key={index}>
               <Metric {...feature} />
@@ -62,8 +62,8 @@ const Metric = ({
 
 const metrics = [
   {
-    title: 'Active Users',
-    desc: `500+`,
+    title: 'Amazing Muslim Users',
+    desc: `1000+`,
     img: users,
   },
   {
@@ -78,7 +78,7 @@ const metrics = [
   },
   {
     title: 'Average Rating',
-    desc: `4.8`,
+    desc: `4.5`,
     img: partnership,
   },
 ]

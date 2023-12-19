@@ -50,6 +50,10 @@ const testimonials = [
     comment: `"For me, it's the ability to reactivate 'almost forgotten' acts of ibadaat like solatul tesbih, family usrah, family Du'a, Monday and Thursday fasts etc. To be honest, this app has been my best accountability companion since it was launched"`,
   },
   {
+    name: 'Lateef',
+    comment: `"Bringing my goals has always been an herculean task. However, my connection with Acco has not only made me actualize my daily goals, but also always help me fill spiritual voids, build confidence, and gives practical self awareness, to know what good I'm capable of."`,
+  },
+  {
     name: 'Maya',
     comment:
       '"One of the things I love most about the app is the timely notifications to ginger you and remind you about your tasks. Thanks to the teams for the amazing job."',

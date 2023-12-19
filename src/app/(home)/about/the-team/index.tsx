@@ -28,13 +28,13 @@ const TheTeam = () => {
           accessible to all.
         </Paragraph>
 
-        <ul tw="flex flex-wrap gap-5 justify-center items-stretch">
+        <ul tw="grid gap-6 mx-auto md:(grid-cols-2) lg:(grid-cols-3)">
           {team.map((member, idx) => {
             const { image, name, role, x, in: linkedIn } = member
             return (
               <li
                 key={idx}
-                tw="relative w-[15rem] bg-customGrey rounded-[1rem] overflow-hidden"
+                tw="relative w-full bg-customGrey rounded-[1rem] overflow-hidden shadow-2xl"
               >
                 <div tw="min-h-[21rem] relative bg-primary text-white bg-center bg-cover">
                   <div tw="absolute top-0 w-full h-full bg-[linear-gradient(180deg,_rgba(26,_92,_171,_0.00) 0%,_rgba(13,_48,_90,_0.70)_100%)] z-[1] transition-all delay-150 ease-in-out hocus:(bg-none)" />
@@ -89,13 +89,6 @@ const team = [
     in: 'https://www.linkedin.com/in/awwaladebisi/',
   },
   {
-    name: 'Hudhayfah Ismail',
-    role: 'Backend Engineer',
-    image: ismail,
-    x: 'https://twitter.com/HudhayfahIsmail',
-    in: 'https://www.linkedin.com/in/hudhayfah-ismail-2241711b5/',
-  },
-  {
     name: 'AbdulRaqib Durojaiye',
     role: 'Brand Designer',
     image: durojaiye,
@@ -108,6 +101,13 @@ const team = [
     image: adejumo,
     x: 'https://twitter.com/aminat_adejumo3',
     in: 'https://www.linkedin.com/in/aminat-adejumo-58b266213/',
+  },
+  {
+    name: 'Hudhayfah Ismail',
+    role: 'Backend Engineer',
+    image: ismail,
+    x: 'https://twitter.com/HudhayfahIsmail',
+    in: 'https://www.linkedin.com/in/hudhayfah-ismail-2241711b5/',
   },
   {
     name: 'Abdurahman Opoola',

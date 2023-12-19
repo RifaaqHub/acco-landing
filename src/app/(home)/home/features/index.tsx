@@ -19,7 +19,7 @@ const Features = () => {
             Features That Resonate
           </Heading>
 
-          <ul tw="grid gap-4 px-6 justify-center lg:(grid-cols-2 gap-6 items-stretch px-[6.25rem])">
+          <ul tw="grid gap-4 px-6 justify-center md:(grid-cols-2 items-stretch ) lg:(gap-6 px-[6.25rem])">
             {features.map((feature, index) => (
               <li key={index}>
                 <Feature {...feature} />
