@@ -9,6 +9,7 @@ import tasks from './assets/tasks.png'
 import reward from './assets/reward.png'
 import progress from './assets/progress.png'
 import screen from './assets/screen.png'
+import ScreensShots from '../shots'
 
 const Features = () => {
   return (
@@ -27,6 +28,8 @@ const Features = () => {
             ))}
           </ul>
         </div>
+
+        <ScreensShots />
 
         <div tw="bg-customGrey rounded-[1rem] mx-6 py-12 px-4 lg:(p-12 mx-[6.25rem])">
           <Heading $variant="h2" as="h2" tw="text-secondary text-center pb-6">
