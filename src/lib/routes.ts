@@ -18,7 +18,7 @@ export const routes = {
     path: '/#faq',
   },
   demo: {
-    path: 'https://youtube.com/shorts/vWmt7DAdQYo?feature=share',
+    path: 'https://youtu.be/E_FeumjLWBM',
   },
   privacy: {
     path: '/privacy',
