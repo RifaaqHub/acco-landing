@@ -113,7 +113,7 @@ const privacyContent = [
   },
   {
     title: 'Data Security',
-    par: 'We take reasonable measures to protect your personal information. However, please be aware that no method of data transmission or storage is 100% secure, and we cannot guarantee the security of your information.',
+    par: 'We take reasonable measures to protect your personal information as much as we can. However, please be aware that no method of data transmission or storage is 100% secure, and we cannot guarantee total and exhaustive security of your information.',
   },
   {
     title: 'Your Choices',
